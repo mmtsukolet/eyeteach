@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Http\Controllers\api;
+
+use App\Http\Controllers\Controller;
+
+/**
+ * Models
+ */
+use App\ChildProgress;
+
+/**
+ * Helpers
+ */
+use Illuminate\Http\Request as LaraRequest;
+
+class ChildprogressController extends Controller
+{
+
+    /**
+     * Handles saving 
+     * @return [type] [description]
+     */
+    public function store()
+    {
+        $input = Request::all();
+
+        $model = new ChildProgress;
+        $result = $model->setAttributesAndSave($input);
+        
+<<<<<<< HEAD
+        $success = $result['success'];
+        $data = $result['data'];
+        $errors = $result['errors'];
+
+        return compact('success', 'data', 'errors');
+=======
+        /*print_r($input);
+        die('stop');*/
+
+        $data = array('progress_mobile_id'=>$input['progress_mobile_id']);
+        return compact('success');
+>>>>>>> changes-child-progress-mik
+    }
+}
