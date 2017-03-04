@@ -11,7 +11,7 @@
     <meta name="keyword" content="CoreUI Bootstrap 4 Admin Template">
     <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
 
-    <title>CoreUI Bootstrap 4 Admin Template</title>
+    <title>Eyeteach 2017</title>
 
     <!-- Icons -->
     <link href="{{ url('css/stylesheets.css') }}" rel="stylesheet">
