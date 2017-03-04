@@ -24,7 +24,8 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install && gulp --production"
   },
   "author": "Łukasz Holeczek",
   "url": "http://coreui.io",
