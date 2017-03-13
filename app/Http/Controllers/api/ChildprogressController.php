@@ -64,10 +64,12 @@ class ChildprogressController extends Controller
                     'incorrect' => (!$inner->progress_status) ? $counter + 1 : $counter + 0
                 ];
             }
-        }
+        }   
 
+        return view('childprogress.reports', ['child_id' => $child_id]);
+        
         // echo json_encode(['data' =>$data]);
-        return compact('data');
+        // return compact('data');
     }
 
     public function getActivities()
